@@ -1,0 +1,7 @@
+<h2>Todo List</h2>
+<ul>
+    {% for todo in todos %}
+        <li>{{ todo.title }} - Due: {{ todo.due_date }}</li>
+    {% endfor %}
+</ul>
+<a href="{% url 'todo_create' %}">Add New Todo</a>
